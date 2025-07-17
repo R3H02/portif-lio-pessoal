@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <!-- Substitua pelo caminho da sua imagem -->
+                <img src="imagem/Imagem do WhatsApp de 2025-03-31 à(s) 21.47.02_be1a3c51.jpg" alt="Minha Foto" class="profile-img">
+                <h1>Seu Nome</h1>
+                <p class="tagline">Desenvolvedor Web</p>
+                
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Eu sou Renato, um apaixonado por tecnologia com grande interesse em trabalhar como desenvolvedor. Apesar de ter pouca experiência, estou sempre em busca de aprender mais e evoluir constantemente.</p>
+                    <p>Gosto de transformar ideias em soluções funcionais através de código e acredito que a dedicação e a vontade de crescer são essenciais para construir uma carreira sólida na área de desenvolvimento.</p>
+                    
+                    <div class="skills">
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">JavaScript</span>
+                        
+                    </div>
+                </div>
+                <!-- Espaço para uma pequena imagem -->
+                <img src="imagem/codigo.png" alt="Hobbies" style="width: 300px; border-radius: 10px;">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="imagem/gaspar.png" alt="Projeto 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Gaspar</h3>
+                        <p>Descrição breve do projeto, tecnologias utilizadas e o problema que resolve.</p>
+                        <div class="project-links">
+                            <a href="https://r3h02.github.io/gaspar/" target="_blank">Ver Demo</a>
+                            <a href="https://github.com/R3H02/gaspar" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="imagem/dugilgriu.png" alt="Projeto 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Dugil Griu</h3>
+                        <p>Descrição breve do projeto, tecnologias utilizadas e o problema que resolve.</p>
+                        <div class="project-links">
+                            <a href="https://r3h02.github.io/Dugil_Gril/" target="_blank">Ver Demo</a>
+                            <a href="https://github.com/R3H02/Dugil_Gril" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="imagem/curso_idioma.png" alt="Projeto 3" class="project-img">
+                    <div class="project-info">
+                        <h3>Curso de idioma</h3>
+                        <p>Descrição breve do projeto, tecnologias utilizadas e o problema que resolve.</p>
+                        <div class="project-links">
+                            <a href="https://r3h02.github.io/curso_de_idioma/" target="_blank">Ver Demo</a>
+                            <a href="https://github.com/R3H02/curso_de_idioma" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-form">
+                <!-- FORMULÁRIO MODIFICADO AQUI -->
+                <form action="enviar.php" method="POST">
+
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="agradecimento.html">
+
+    <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Enviar Mensagem</button>
+</form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Renato Aguiar.</p>
+        </div>
+    </footer>
+
+     <script>
+        // Atualiza o ano no footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Adiciona Font Awesome para ícones
+        const faScript = document.createElement('script');
+        faScript.src = 'https://kit.fontawesome.com/a076d05399.js';
+        faScript.crossOrigin = 'anonymous';
+        document.head.appendChild(faScript);
+    </script>
+</body>
+</html>
